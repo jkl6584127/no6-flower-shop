@@ -1,0 +1,11 @@
+{
+  "name": "no6-flower-shop",
+  "version": "1.0.0",
+  "description": "六號花藝交易所 - 永生花電商網站",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

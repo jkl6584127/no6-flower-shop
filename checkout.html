@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>結帳 - 六號花藝交易所</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-checkout">
+
+<div class="top-bar"><div class="container"><span>&#9742; 02-2888-6666 ｜ hello@no6flower.tw</span><div class="top-bar-links"><a href="#">FB</a> ・ <a href="#">IG</a> ・ <a href="#">LINE</a></div></div></div>
+<header class="site-header"><nav class="main-nav"><div class="container">
+  <a href="index.html" class="logo"><span class="logo-icon">&#127800;</span><div>六號花藝交易所<span class="logo-sub">NO.6 FLOWER EXCHANGE</span></div></a>
+  <div class="nav-links"><a href="index.html">首頁</a><a href="products.html">商品總覽</a><a href="#">品牌故事</a><a href="#">常見問題</a><a href="#">聯絡我們</a></div>
+  <div class="nav-actions"><button data-action="open-search" aria-label="搜尋">&#128269;</button><a href="member.html" aria-label="會員">&#128100;</a><button data-action="open-cart" aria-label="購物車">&#128722;<span class="cart-count" style="display:none;">0</span></button></div>
+  <button class="burger-btn" aria-label="選單"><span></span><span></span><span></span></button>
+</div></nav><div class="nav-mobile"><a href="index.html">首頁</a><a href="products.html">商品總覽</a><a href="login.html">登入</a></div></header>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1>結帳</h1>
+    <div class="breadcrumb"><a href="index.html">首頁</a> &gt; <a href="cart.html">購物車</a> &gt; 結帳</div>
+  </div>
+</section>
+
+<!-- Checkout Section -->
+<section class="checkout-section">
+  <div class="container">
+    <div class="checkout-grid">
+
+      <!-- Left: Checkout Form -->
+      <div class="checkout-form">
+
+        <div class="form-section">
+          <h3>收件人資訊</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="last-name">姓 <span class="required">*</span></label>
+              <input type="text" id="last-name" placeholder="王" required>
+            </div>
+            <div class="form-group">
+              <label for="first-name">名 <span class="required">*</span></label>
+              <input type="text" id="first-name" placeholder="小花" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">聯絡電話 <span class="required">*</span></label>
+              <input type="tel" id="phone" placeholder="0912-345-678" required>
+            </div>
+            <div class="form-group">
+              <label for="email">電子信箱 <span class="required">*</span></label>
+              <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>配送地址</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">縣市 <span class="required">*</span></label>
+              <select id="city" required>
+                <option value="">請選擇縣市</option>
+                <option value="台北市">台北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="台中市">台中市</option>
+                <option value="台南市">台南市</option>
+                <option value="高雄市">高雄市</option>
+                <option value="基隆市">基隆市</option>
+                <option value="新竹市">新竹市</option>
+                <option value="嘉義市">嘉義市</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="district">鄉鎮市區 <span class="required">*</span></label>
+              <input type="text" id="district" placeholder="大安區" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="postal-code">郵遞區號 <span class="required">*</span></label>
+              <input type="text" id="postal-code" placeholder="106" required>
+            </div>
+            <div class="form-group">
+              <label for="address">詳細地址 <span class="required">*</span></label>
+              <input type="text" id="address" placeholder="花藝路88號3樓" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group" style="width:100%;">
+              <label for="notes">訂單備註</label>
+              <textarea id="notes" rows="3" placeholder="如有特殊需求請在此備註，例如：希望配送時間、卡片內容等"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>付款方式</h3>
+          <div class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment" value="credit-card" checked>
+              <span>信用卡</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="atm">
+              <span>ATM轉帳</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cod">
+              <span>貨到付款</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="line-pay">
+              <span>LINE Pay</span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Order Summary -->
+      <div class="order-summary">
+        <h3>訂單摘要</h3>
+        <div id="checkout-items">
+          <div class="order-item">
+            <div class="item-info"><span class="item-name">經典紅玫瑰永生花束</span><span class="item-qty">x1</span></div>
+            <div class="item-price">NT$2,680</div>
+          </div>
+          <div class="order-item">
+            <div class="item-info"><span class="item-name">粉色夢幻花盒</span><span class="item-qty">x2</span></div>
+            <div class="item-price">NT$3,960</div>
+          </div>
+          <div class="order-item">
+            <div class="item-info"><span class="item-name">藍色海洋永生花框</span><span class="item-qty">x1</span></div>
+            <div class="item-price">NT$1,580</div>
+          </div>
+        </div>
+        <div class="total-row"><span>小計</span><span>NT$8,220</span></div>
+        <div class="total-row"><span>運費</span><span>NT$100</span></div>
+        <div class="total-row grand"><span>合計</span><span>NT$8,320</span></div>
+        <button class="btn btn--primary btn--block">確認下單</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+  <div class="footer-col"><h4>六號花藝交易所</h4><p>以永不凋謝的花，傳遞珍貴心意。</p><div class="footer-social"><a href="#">FB</a><a href="#">IG</a><a href="#">LINE</a></div></div>
+  <div class="footer-col"><h4>顧客服務</h4><ul><li><a href="#">常見問題</a></li><li><a href="#">退換貨政策</a></li><li><a href="#">配送說明</a></li></ul></div>
+  <div class="footer-col"><h4>購物指南</h4><ul><li><a href="products.html">全部商品</a></li><li><a href="#">永生花保養</a></li><li><a href="#">送禮推薦</a></li></ul></div>
+  <div class="footer-col"><h4>聯絡我們</h4><ul><li>&#128205; 台北市大安區花藝路88號1樓</li><li>&#9742; 02-2888-6666</li><li>&#9993; hello@no6flower.tw</li></ul></div>
+</div><div class="footer-bottom">&copy; 2026 六號花藝交易所 All Rights Reserved.</div></div></footer>
+
+<div class="cart-overlay"></div>
+<div class="cart-drawer"><div class="cart-drawer__header"><h3>&#128722; 購物車</h3><button class="cart-drawer__close" data-action="close-cart">&times;</button></div><div class="cart-drawer__items"></div><div class="cart-drawer__footer"><div class="cart-drawer__total"><span>合計</span><span class="cart-drawer__total-price">NT$0</span></div><a href="cart.html" class="btn btn--primary btn--block">查看購物車</a><a href="checkout.html" class="btn btn--dark btn--block">前往結帳</a></div></div>
+<div class="search-overlay"><div class="search-overlay__box"><input type="text" class="search-overlay__input" placeholder="搜尋商品..."><div class="search-overlay__results"><p class="search-overlay__hint">請輸入關鍵字搜尋商品...</p></div><button data-action="close-search" style="position:absolute;top:16px;right:20px;background:none;font-size:1.5rem;color:#888;">&times;</button></div></div>
+<button class="back-to-top" aria-label="回到頂部">&#9650;</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

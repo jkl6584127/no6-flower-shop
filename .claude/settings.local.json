@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.stsanitary.com)",
+      "Bash(ls:*)",
+      "Bash(sed:*)",
+      "Bash(sed -i 's/Bloom Admin/六號花藝 Admin/g; s/Bloom 永生花藝/六號花藝交易所/g; s/花語永恆/六號花藝交易所/g' js/main.js js/admin.js admin/index.html)",
+      "Bash(sed -i 's/Bloom 永生花電商/六號花藝交易所/g' css/style.css css/admin.css)",
+      "Bash(grep -rl \"Bloom\" *.html js/*.js admin/*.html)",
+      "Bash(sed -i 's|photo-1522057306606-8d84afe10e69|photo-1468327768560-75b778cbb551|g' js/main.js)",
+      "Bash(sed -i 's|photo-1490750967868-88aa4f44baee|photo-1533616688419-b7a585564566|g' js/main.js product-detail.html)",
+      "Bash(sed -i 's|photo-1561334005-4c04b41c0064|photo-1457089328109-e5d9bd499191|g' js/main.js)",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}

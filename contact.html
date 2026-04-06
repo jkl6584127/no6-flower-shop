@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們 - 六號花藝交易所</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-contact">
+
+  <div class="top-bar">
+    <div class="container">
+      <span>&#9742; 02-2888-6666 ｜ hello@no6flower.tw</span>
+      <div class="top-bar-links"><a href="#">FB</a> ・ <a href="#">IG</a> ・ <a href="#">LINE</a></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="main-nav">
+      <div class="container">
+        <a href="index.html" class="logo"><span class="logo-icon">&#127800;</span><div>六號花藝交易所<span class="logo-sub">NO.6 FLOWER EXCHANGE</span></div></a>
+        <div class="nav-links">
+          <a href="index.html">首頁</a>
+          <a href="products.html">商品總覽</a>
+          <a href="about.html">品牌故事</a>
+          <a href="faq.html">常見問題</a>
+          <a href="contact.html" class="active">聯絡我們</a>
+        </div>
+        <div class="nav-actions">
+          <button data-action="open-search" aria-label="搜尋">&#128269;</button>
+          <a href="member.html" aria-label="會員">&#128100;</a>
+          <button data-action="open-cart" aria-label="購物車">&#128722;<span class="cart-count" style="display:none;">0</span></button>
+        </div>
+        <button class="burger-btn" aria-label="選單"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="nav-mobile">
+      <a href="index.html">首頁</a><a href="products.html">商品總覽</a><a href="about.html">品牌故事</a>
+      <a href="faq.html">常見問題</a><a href="contact.html">聯絡我們</a><a href="login.html">登入</a>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div>
+      <h1>聯絡我們</h1>
+      <p class="breadcrumb"><a href="index.html">首頁</a> &gt; 聯絡我們</p>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="contact-grid">
+        <!-- Left: Contact Info -->
+        <div>
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="card-icon">&#128205;</div>
+              <div>
+                <h4>門市地址</h4>
+                <p>台北市大安區花藝路 88 號 1 樓<br>（捷運大安站 3 號出口步行 5 分鐘）</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="card-icon">&#9742;</div>
+              <div>
+                <h4>聯絡電話</h4>
+                <p>02-2888-6666<br>週一至週六 10:00 - 19:00</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="card-icon">&#9993;</div>
+              <div>
+                <h4>電子信箱</h4>
+                <p>一般諮詢：hello@no6flower.tw<br>婚禮花藝：wedding@no6flower.tw<br>企業合作：business@no6flower.tw</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="card-icon">&#128172;</div>
+              <div>
+                <h4>社群媒體</h4>
+                <p>Facebook：六號花藝交易所<br>Instagram：@no6flower<br>LINE 官方帳號：@no6flower</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-card">
+          <h3>填寫表單</h3>
+          <p style="font-size:0.88rem;color:var(--gray);margin-bottom:24px;">我們將在 1-2 個工作天內回覆您</p>
+          <form class="contact-form" onsubmit="event.preventDefault(); if(typeof Toast!=='undefined')Toast.show('感謝您的留言，我們會盡快回覆！','success'); this.reset();">
+            <div class="form-row">
+              <div class="form-group">
+                <label>姓名 <span style="color:var(--danger);">*</span></label>
+                <input type="text" placeholder="請輸入姓名" required>
+              </div>
+              <div class="form-group">
+                <label>電話</label>
+                <input type="tel" placeholder="請輸入聯絡電話">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>電子信箱 <span style="color:var(--danger);">*</span></label>
+              <input type="email" placeholder="請輸入 Email" required>
+            </div>
+            <div class="form-group">
+              <label>諮詢類別</label>
+              <select>
+                <option value="">請選擇</option>
+                <option>商品諮詢</option>
+                <option>訂單問題</option>
+                <option>婚禮花藝洽詢</option>
+                <option>企業合作</option>
+                <option>客製化需求</option>
+                <option>其他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>訊息內容 <span style="color:var(--danger);">*</span></label>
+              <textarea placeholder="請詳細描述您的需求..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block btn--lg">送出訊息</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-section">
+        <div style="text-align:center;">
+          <p style="font-size:2rem;margin-bottom:12px;">&#127759;</p>
+          <p><strong>六號花藝交易所 - 台北旗艦店</strong></p>
+          <p>台北市大安區花藝路 88 號 1 樓</p>
+          <p style="margin-top:8px;font-size:0.85rem;">捷運大安站 3 號出口，沿花藝路步行約 5 分鐘</p>
+        </div>
+      </div>
+
+      <!-- Store Cards -->
+      <div class="store-cards">
+        <div class="store-card">
+          <h4>&#127800; 台北旗艦店</h4>
+          <p>&#128205; 台北市大安區花藝路 88 號 1 樓</p>
+          <p>&#9742; 02-2888-6666</p>
+          <p>&#128336; 週一至週六 10:00 - 19:00</p>
+          <p>&#128663; 捷運大安站 3 號出口步行 5 分鐘</p>
+          <p style="margin-top:12px;font-size:0.85rem;color:var(--primary-dark);">提供現場選購、花藝課程、婚禮諮詢</p>
+        </div>
+        <div class="store-card">
+          <h4>&#127803; 台中展示中心</h4>
+          <p>&#128205; 台中市西屯區文心路三段 168 號 2 樓</p>
+          <p>&#9742; 04-2388-9999</p>
+          <p>&#128336; 週二至週日 11:00 - 20:00（週一公休）</p>
+          <p>&#128663; 捷運市政府站步行 8 分鐘</p>
+          <p style="margin-top:12px;font-size:0.85rem;color:var(--primary-dark);">提供現場選購、企業訂製諮詢</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h4>六號花藝交易所</h4><p>以永不凋謝的花，傳遞每一份珍貴的心意。</p><div class="footer-social"><a href="#">FB</a><a href="#">IG</a><a href="#">LINE</a><a href="#">YT</a></div></div>
+        <div class="footer-col"><h4>顧客服務</h4><ul><li><a href="faq.html">常見問題</a></li><li><a href="#">退換貨政策</a></li><li><a href="#">配送說明</a></li><li><a href="#">隱私權政策</a></li></ul></div>
+        <div class="footer-col"><h4>購物指南</h4><ul><li><a href="products.html">全部商品</a></li><li><a href="#">永生花保養</a></li><li><a href="#">送禮推薦</a></li><li><a href="#">婚禮花藝</a></li></ul></div>
+        <div class="footer-col"><h4>聯絡我們</h4><ul><li>&#128205; 台北市大安區花藝路 88 號 1 樓</li><li>&#9742; 02-2888-6666</li><li>&#9993; hello@no6flower.tw</li><li>&#128336; 週一至週六 10:00 - 19:00</li></ul></div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 六號花藝交易所 All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay"></div>
+  <div class="cart-drawer">
+    <div class="cart-drawer__header"><h3>&#128722; 購物車</h3><button class="cart-drawer__close" data-action="close-cart">&times;</button></div>
+    <div class="cart-drawer__items"></div>
+    <div class="cart-drawer__footer"><div class="cart-drawer__total"><span>合計</span><span class="cart-drawer__total-price">NT$0</span></div><a href="cart.html" class="btn btn--primary btn--block">查看購物車</a><a href="checkout.html" class="btn btn--dark btn--block">前往結帳</a></div>
+  </div>
+  <div class="search-overlay"><div class="search-overlay__box"><input type="text" class="search-overlay__input" placeholder="搜尋商品..."><div class="search-overlay__results"><p class="search-overlay__hint">請輸入關鍵字搜尋商品...</p></div><button data-action="close-search" style="position:absolute;top:16px;right:20px;background:none;font-size:1.5rem;color:#888;">&times;</button></div></div>
+  <button class="back-to-top" aria-label="回到頂部">&#9650;</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
